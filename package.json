@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-examples",
+  "version": "1.0.0",
+  "description": "A place to keep my real-world code examples and notes for NodeJs application development and testing",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "rimraf": "rimraf",
+    "tsc": "tsc",
+    "clearBuild": "npm run rimraf -- build",
+    "build": "npm run clearBuild && npm run tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robhortn/nodejs-examples.git"
+  },
+  "author": "Rob Horton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robhortn/nodejs-examples/issues"
+  },
+  "homepage": "https://github.com/robhortn/nodejs-examples#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http-status-codes": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.1"
+  }
+}
